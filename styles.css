@@ -4,6 +4,7 @@ body {
 
 .logInIcon {
 	margin-left: 150px;
+}
 
 div {
     display: block;
@@ -37,7 +38,7 @@ html {
 
 .promo {
     width: 100%;
-    padding-top: 125px;
+    padding-top: 75px;
     overflow: hidden;
 }
 
@@ -53,10 +54,39 @@ html {
 	padding: none;
 }
 
+#home-icon {
+	padding-right: 225px;
+}
+
 #logo-font {
 	padding: 0 0 35px 15px;
 }
 
 nav {
 	line-height: 65px;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: rgba(37, 38, 38, 0.95);
+    color: #8ad0c2;
+}
+
+.tabs .tab a {
+    color: #8ad0c2;
+}
+
+.tabs .tab a {
+    color: #8ad0c2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: color .28s ease;
+}
+
+a {
+    background-color: #252626;
 }
