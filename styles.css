@@ -1,3 +1,59 @@
 body {
 	background-color: #37474f;
 }
+
+div {
+    display: block;
+}
+
+html {
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: rgba(0,0,0,0.87);
+}
+
+.row .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    min-height: 1px;
+}
+
+.row .col.s4 {
+    width: 33.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.promo {
+    width: 100%;
+    padding-top: 125px;
+    overflow: hidden;
+}
+
+.material-icons {
+	padding-bottom: 50px;
+}
+
+.light, .page-footer .footer-copyright {
+    font-weight: 300;
+}
+
+.image-responsive {
+	padding: none;
+}
+
+#logo-font {
+	padding: 0 0 35px 15px;
+}
+
+nav {
+	line-height: 65px;
+}
