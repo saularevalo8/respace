@@ -5,3 +5,88 @@ body {
 .logInIcon {
 	margin-left: 150px;
 }
+
+div {
+    display: block;
+}
+
+html {
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: rgba(0,0,0,0.87);
+}
+
+.row .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 .75rem;
+    min-height: 1px;
+}
+
+.row .col.s4 {
+    width: 33.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+
+.center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.promo {
+    width: 100%;
+    padding-top: 125px;
+    overflow: hidden;
+}
+
+.material-icons {
+	padding-bottom: 50px;
+}
+
+.light, .page-footer .footer-copyright {
+    font-weight: 300;
+}
+
+.image-responsive {
+	padding: none;
+}
+
+#home-icon {
+	padding-right: 225px;
+}
+
+#logo-font {
+	padding: 0 0 35px 15px;
+}
+
+nav {
+	line-height: 65px;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: rgba(37, 38, 38, 0.95);
+    color: #8ad0c2;
+}
+
+.tabs .tab a {
+    color: #8ad0c2;
+}
+
+.tabs .tab a {
+    color: #8ad0c2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: color .28s ease;
+}
+
+a {
+    background-color: #252626;
+}
