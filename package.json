@@ -11,15 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/saularevalo8/respace.git"
   },
-  "author": "Jordan Brown - Backend 
-            Thomas Carpenter - Backend
-            Saul Arevalo - Backend
-            Joyce Tio - Frontend
-            Blake Nelson - Frontend",
-        
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/saularevalo8/respace/issues"
   },
-  "homepage": "https://github.com/saularevalo8/respace#readme"
+  "homepage": "https://github.com/saularevalo8/respace#readme",
+  "dependencies": {
+    "express-session": "^1.15.2",
+    "sequelize": "^3.30.4"
+  }
 }
