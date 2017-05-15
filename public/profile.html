@@ -97,13 +97,52 @@
         </div>
     </div>
     <!-- Provide a Parking Spot Modal -->
-    <div id="provideParking" class="modal">
+    <div id="provideParking" class="modal modal-fixed-footer">
         <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
+            <h5>Please enter the parking space's location you would like to provide:</h5>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="parkingAddress" type="text" class="validate">
+                            <label for="parkingAddress">Parking Space Address:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input id="parkingCity" type="text" class="validate">
+                            <label for="parkingCity">City:</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="parkingState" type="text" class="validate">
+                            <label for="parkingState">State:</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="parkingZipCode" type="text" class="validate">
+                            <label for="parkingZipCode">Zip Code:</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <h5>Please choose the available car size for your parking space:</h5>
+            <form>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="compactCarSize" />
+                    <label for="compactCarSize">Compact</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="mid-sizeCarSize" />
+                    <label for="mid-sizeCarSize">Mid-Size</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="largeCarSize" />
+                    <label for="largeCarSize">Large</label>
+                </p>
+            </form>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
