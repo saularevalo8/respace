@@ -31,23 +31,42 @@
         <div class="row">
             <div class="col s12">
                 <div class="row">
-                    <div class="col s6 push-s6">
-                        <img src="#" class="responsive-img" height="150" width="100">
+                    <div class="col s8 push-s4">
+                        <img src="assets/images/toothless.png" class="responsive-img" height="250" width="250">
                     </div>
                 </div>
-                <h3 class="center">Hi, <span class="username">@username</span></h3>
+                <h4 class="center">Hi, <span class="username">@username</span></h4>
             </div>
         </div>
         <div class="row">
-            <div class="card">
+            <div class="card  blue-grey lighten-4">
                 <div class="card-content">
-                    <a href="#searchParking">Search for Parking</a> | <a href="#provideParking">Provide a Parking Spot</a>
-                    <h3>Add collapsibles</h3>
+                    <h5><a href="#searchParking" class="tooltipped" data-position="top" data-delay="40" data-tooltip="If you would like to search for parking spaces available, click here." style="color: black;">Search for Parking</a> | <a href="#provideParking" class="tooltipped" data-position="top" data-delay="40" data-tooltip="If you wish to provide a parking space to other users, click here." style="color: black;">Provide a Parking Spot</a></h5>
+                    <ul class="collapsible" data-collapsible="expandable">
+                        <li>
+                            <div class="collapsible-header active"><i class="material-icons">place</i>View your reserved parking spaces</div>
+                            <div class="collapsible-body">
+                                <div class="driverData">
+                                    <h5>Driver data goes here</h5>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid nemo, at totam similique minus voluptatum dolor soluta natus consequatur iste possimus magnam harum velit, cupiditate, aperiam ipsa consequuntur quam!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">business</i>View the parking spaces you provided</div>
+                            <div class="collapsible-body">
+                                <div class="supplierDate">
+                                    <h5>Supplier data goes here</h5>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, doloribus, provident! Velit nemo, alias delectus accusantium assumenda voluptatum magni reiciendis! Velit, in autem explicabo obcaecati commodi iusto animi odio dolores.</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Search for Parking Modal -->
+    <!-- Search for Parking Modal (Driver) -->
     <div id="searchParking" class="modal modal-fixed-footer">
         <div class="modal-content">
             <h5>Please enter your desired parking location:</h5>
@@ -92,11 +111,11 @@
             </form>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat">Submit</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat">Close</a>
         </div>
     </div>
-    <!-- Provide a Parking Spot Modal -->
+    <!-- Provide a Parking Spot Modal (Supplier) -->
     <div id="provideParking" class="modal modal-fixed-footer">
         <div class="modal-content">
             <h5>Please enter the parking space's location you would like to provide:</h5>
@@ -141,8 +160,8 @@
             </form>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat">Submit</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat">Close</a>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
