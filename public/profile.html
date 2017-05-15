@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Profile Page</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Compiled and minified CSS -->
@@ -19,8 +19,8 @@
             <img class="img-responsive" id="logo-font" height="110" width="110" src="assets/images/ReSpaceFontt.svg">
             <a href="#" class="brand-logo"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Profile</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="profile.html">Profile</a></li>
                 <li><a href="map.html">Map</a></li>
             </ul>
         </div>
@@ -32,7 +32,7 @@
             <div class="col s12">
                 <div class="row">
                     <div class="col s6 push-s6">
-                    <img src="#" class="responsive-img" height="150" width="100">
+                        <img src="#" class="responsive-img" height="150" width="100">
                     </div>
                 </div>
                 <h3 class="center">Hi, <span class="username">@username</span></h3>
@@ -48,13 +48,52 @@
         </div>
     </div>
     <!-- Search for Parking Modal -->
-    <div id="searchParking" class="modal">
+    <div id="searchParking" class="modal modal-fixed-footer">
         <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
+            <h5>Please enter your desired parking location:</h5>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="destAddress" type="text" class="validate">
+                            <label for="destAddress">Destination Address:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input id="destCity" type="text" class="validate">
+                            <label for="destCity">City:</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="destState" type="text" class="validate">
+                            <label for="destState">State:</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="destZipCode" type="text" class="validate">
+                            <label for="destZipCode">Zip Code:</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <h5>Please choose your car size:</h5>
+            <form>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="compactCarSize" />
+                    <label for="compactCarSize">Compact</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="mid-sizeCarSize" />
+                    <label for="mid-sizeCarSize">Mid-Size</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="largeCarSize" />
+                    <label for="largeCarSize">Large</label>
+                </p>
+            </form>
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
         </div>
     </div>
     <!-- Provide a Parking Spot Modal -->
