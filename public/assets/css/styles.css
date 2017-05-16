@@ -54,6 +54,10 @@ html {
 	padding: none;
 }
 
+#teamicon {
+    color: #8ad0c2;
+}
+
 #home-icon {
 	padding-right: 225px;
 }
