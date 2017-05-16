@@ -38,7 +38,7 @@ html {
 
 .promo {
     width: 100%;
-    padding: 75px 0 75px 0;
+    padding-top: 125px;
     overflow: hidden;
 }
 
@@ -54,10 +54,6 @@ html {
 	padding: none;
 }
 
-#teamicon {
-    color: #8ad0c2;
-}
-
 #home-icon {
 	padding-right: 225px;
 }
@@ -66,17 +62,12 @@ html {
 	padding: 0 0 35px 15px;
 }
 
-nav ul a{
-    color: #8ad0c2;
+nav {
 	line-height: 65px;
 }
 
-.tabs {
-    background-color: #263238;
-}
-
 .tabs .tab a:hover, .tabs .tab a.active {
-    background-color: #222d32;
+    background-color: rgba(37, 38, 38, 0.95);
     color: #8ad0c2;
 }
 
@@ -96,19 +87,6 @@ nav ul a{
     transition: color .28s ease;
 }
 
-.page-footer {
-    color: #8ad0c2;
-    background-color: #37474f;
-}
-
-.signup {
-    background-color: #37474f;
-}
-
-.white-text {
-    color: #8ad0c2 !important;
-}
-
-.brandtext {
-    color: #8ad0c2; 
+a {
+    background-color: #252626;
 }
