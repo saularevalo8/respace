@@ -4,12 +4,13 @@ $("#add-btn").on("click", function(event){
 //confirm the name properties name are the same as html
 	var newSupplier = {
 		name: $("#name").val().trim(),
-		address: $("address").val().trim(),
-		city: $("city").val().trim(),
-		state: $("state").val().trim(),
-		zip: $("zip").val().trim(),
-		carSize: $("zip").val().trim(),
-		duration: $("duration").val().trim().
+		address: $("#parkingAddress").val().trim(),
+		city: $("#parkingCity").val().trim(),
+		state: $("#parkingState").val().trim(),
+		zip: $("#zip").val().trim(),
+		carSize: $("#carSize").val().trim(),
+		startTime: $("#startTime").val().trim(),
+		endTime: $("#endTime").val().trim()
 	}
 	$.post("/api/new", newSupplier)
 	.done(function(data){
@@ -17,9 +18,10 @@ $("#add-btn").on("click", function(event){
 	});
 
 	$("#name").val("");
-	$("address").val("");
-	$("city").val("");
-	$("zip").val("");
-	$("zip").val("");
-	$("duration").val("");
+	$("#address").val("");
+	$("#city").val("");
+	$("#zip").val("");
+	$("#carSize").val("");
+	$("#startTime").val("");
+	$("#endTime").val("");
 })
