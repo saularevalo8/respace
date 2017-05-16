@@ -87,6 +87,18 @@ nav {
     transition: color .28s ease;
 }
 
-a {
+.page-footer {
+    background-color: #263238;
+}
+
+#footer {
     background-color: #252626;
+}
+
+.tabs .tab a {
+    color: #8ad0c2;
+}
+
+#googleMap {
+    background-color: pink;
 }
