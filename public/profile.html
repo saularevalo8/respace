@@ -4,13 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Profile Page</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -18,20 +16,160 @@
 <body>
     <nav>
         <div class="nav-wrapper blue-grey darken-4">
-        <img class="img-responsive" id="logo-font" height="110" width="110" src="assets/images/ReSpaceFontt.svg">
+            <img class="img-responsive" id="logo-font" height="110" width="110" src="assets/images/ReSpaceFontt.svg">
             <a href="#" class="brand-logo"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="team.html">Profile</a></li>
-                <li><a href="collapsible.html">Map</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="profile.html">Profile</a></li>
+                <li><a href="map.html">Map</a></li>
             </ul>
         </div>
     </nav>
     <br>
     <br>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="row">
+                    <div class="col s8 push-s4">
+                        <img src="assets/images/toothless.png" class="responsive-img" height="250" width="250">
+                    </div>
+                </div>
+                <h4 class="center">Hi, <span class="username">@username</span></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card  blue-grey lighten-4">
+                <div class="card-content">
+                    <h5><a href="#searchParking" class="tooltipped" data-position="top" data-delay="40" data-tooltip="If you would like to search for parking spaces available, click here." style="color: black;">Search for Parking</a> | <a href="#provideParking" class="tooltipped" data-position="top" data-delay="40" data-tooltip="If you wish to provide a parking space to other users, click here." style="color: black;">Provide a Parking Spot</a></h5>
+                    <ul class="collapsible" data-collapsible="expandable">
+                        <li>
+                            <div class="collapsible-header active"><i class="material-icons">place</i>View your reserved parking spaces</div>
+                            <div class="collapsible-body">
+                                <div class="driverData">
+                                    <h5>Driver data goes here</h5>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid nemo, at totam similique minus voluptatum dolor soluta natus consequatur iste possimus magnam harum velit, cupiditate, aperiam ipsa consequuntur quam!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"><i class="material-icons">business</i>View the parking spaces you provided</div>
+                            <div class="collapsible-body">
+                                <div class="supplierDate">
+                                    <h5>Supplier data goes here</h5>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, doloribus, provident! Velit nemo, alias delectus accusantium assumenda voluptatum magni reiciendis! Velit, in autem explicabo obcaecati commodi iusto animi odio dolores.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search for Parking Modal (Driver) -->
+    <div id="searchParking" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h5>Please enter your desired parking location:</h5>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="destAddress" type="text" class="validate">
+                            <label for="destAddress">Destination Address:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input id="destCity" type="text" class="validate">
+                            <label for="destCity">City:</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="destState" type="text" class="validate">
+                            <label for="destState">State:</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="destZipCode" type="text" class="validate">
+                            <label for="destZipCode">Zip Code:</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <h5>Please choose your car size:</h5>
+            <form>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="compactCarSize" />
+                    <label for="compactCarSize">Compact</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="mid-sizeCarSize" />
+                    <label for="mid-sizeCarSize">Mid-Size</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="largeCarSize" />
+                    <label for="largeCarSize">Large</label>
+                </p>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat">Submit</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat">Close</a>
+        </div>
+    </div>
+    <!-- Provide a Parking Spot Modal (Supplier) -->
+    <div id="provideParking" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h5>Please enter the parking space's location you would like to provide:</h5>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="parkingAddress" type="text" class="validate">
+                            <label for="parkingAddress">Parking Space Address:</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s4">
+                            <input id="parkingCity" type="text" class="validate">
+                            <label for="parkingCity">City:</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="parkingState" type="text" class="validate">
+                            <label for="parkingState">State:</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input id="parkingZipCode" type="text" class="validate">
+                            <label for="parkingZipCode">Zip Code:</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <h5>Please choose the available car size for your parking space:</h5>
+            <form>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="compactCarSize" />
+                    <label for="compactCarSize">Compact</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="mid-sizeCarSize" />
+                    <label for="mid-sizeCarSize">Mid-Size</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="largeCarSize" />
+                    <label for="largeCarSize">Large</label>
+                </p>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat">Submit</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat">Close</a>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script src="frontend.js"></script>
 </body>
 
 </html>
