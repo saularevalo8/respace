@@ -38,7 +38,7 @@ html {
 
 .promo {
     width: 100%;
-    padding-top: 125px;
+    padding: 75px 0 75px 0;
     overflow: hidden;
 }
 
@@ -62,12 +62,17 @@ html {
 	padding: 0 0 35px 15px;
 }
 
-nav {
+nav ul a{
+    color: #8ad0c2;
 	line-height: 65px;
 }
 
+.tabs {
+    background-color: #263238;
+}
+
 .tabs .tab a:hover, .tabs .tab a.active {
-    background-color: rgba(37, 38, 38, 0.95);
+    background-color: #222d32;
     color: #8ad0c2;
 }
 
@@ -87,6 +92,19 @@ nav {
     transition: color .28s ease;
 }
 
-a {
-    background-color: #252626;
+.page-footer {
+    color: #8ad0c2;
+    background-color: #37474f;
+}
+
+.signup {
+    background-color: #37474f;
+}
+
+.white-text {
+    color: #8ad0c2 !important;
+}
+
+.brandtext {
+    color: #8ad0c2; 
 }
