@@ -1,7 +1,7 @@
 var Sequelize = require("sequelize");
 
 
-var sequelize = new Sequelize("respace_db", "root", "F0ll0wthewhiterabbit", {
+var sequelize = new Sequelize("respace_db", "root", "", {
 	host: "localhost",
 	dialect: "mysql",
 	pool: {
