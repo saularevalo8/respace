@@ -67,8 +67,12 @@ nav {
 }
 
 .tabs .tab a:hover, .tabs .tab a.active {
-    background-color: rgba(37, 38, 38, 0.95);
+    background-color: #263238;
     color: #8ad0c2;
+}
+
+.tabs .tab a:hover, .tabs .tab a {
+    background-color: #252626;
 }
 
 .tabs .tab a {
@@ -87,6 +91,26 @@ nav {
     transition: color .28s ease;
 }
 
-a {
+.page-footer {
+    background-color: #263238;
+}
+
+#footer {
     background-color: #252626;
+}
+
+.tabs .tab a {
+    color: #8ad0c2;
+}
+
+#googleMap {
+    background-color: pink;
+}
+
+.btn, .btn-large {
+    background-color: #48d6bb;
+}
+
+#tabicons {
+    padding-left: 25px;
 }
