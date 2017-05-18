@@ -1,3 +1,6 @@
+var Sequelize = require("sequelize");
+var sequelize = require("../config/connection.js");
+
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var Location = sequelize.define('Location', {
@@ -6,8 +9,11 @@ module.exports = function(sequelize, DataTypes) {
     city: DataTypes.STRING,
     state: DataTypes.STRING,
     zip: DataTypes.INTEGER,
-    sequelize: DataTypes.STRING,
-    inUse: DataTypes.BOOLEAN
+    country: DataTypes.STRING,
+    inUse: DataTypes.BOOLEAN,
+    startTime: DataTypes.DATE,
+    endTime: DataTypes.DATE,
+    isPaid: DataTypes.BOOLEAN
   }, {
     classMethods: {
       associate: function(models) {
@@ -20,3 +26,5 @@ module.exports = function(sequelize, DataTypes) {
   });
   return Location;
 };
+
+//Location.sync();
