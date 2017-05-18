@@ -95,26 +95,19 @@
                 </form>
             </div>
             <h5>Please choose your car size:</h5>
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input placeholder="Options: Compact, Mid-Size, Large" id="carSize" type="text" class="validate">
-                        <label for="carSize">Car Size</label>
-                    </div>
-                </div>
-            </form>
-            <h5>Time Availability (Parking Time)</h5>
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input placeholder="HH:MM" id="carSize" type="text" class="validate">
-                        <label for="carSize">Start Time</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input placeholder="HH:MM" id="carSize" type="text" class="validate">
-                        <label for="carSize">End Time</label>
-                    </div>
-                </div>
+            <form>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="compactCarSize" />
+                    <label for="compactCarSize">Compact</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="mid-sizeCarSize" />
+                    <label for="mid-sizeCarSize">Mid-Size</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="largeCarSize" />
+                    <label for="largeCarSize">Large</label>
+                </p>
             </form>
         </div>
         <div class="modal-footer">
@@ -151,31 +144,24 @@
                 </form>
             </div>
             <h5>Please choose the available car size for your parking space:</h5>
-            <form clas="col s12">
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input placeholder="Options: Compact, Mid-Size, Large" id="carSize" type="text" class="validate">
-                        <label for="carSize">Car Size</label>
-                    </div>
-                </div>
-            </form>
-            <h5>Time Availability (Parking Time)</h5>
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input placeholder="HH:MM" id="carSize" type="text" class="validate">
-                        <label for="carSize">Start Time</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input placeholder="HH:MM" id="carSize" type="text" class="validate">
-                        <label for="carSize">End Time</label>
-                    </div>
-                </div>
+            <form>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="compactCarSize" />
+                    <label for="compactCarSize">Compact</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="mid-sizeCarSize" />
+                    <label for="mid-sizeCarSize">Mid-Size</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="carSize" type="radio" id="largeCarSize" />
+                    <label for="largeCarSize">Large</label>
+                </p>
             </form>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat">Submit</a>
-            <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat">Close</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat" id="supplierParking">Submit</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat" id="cancelSupplierParking">Close</a>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
