@@ -60,7 +60,12 @@ $(document).ready(function() {
             username: username,
             password: password
         }).then(function(data) {
-            window.location.replace(data);
+            if (data.duplicateUser) {
+                // Replace with Modal
+                alert("Sorry, that username has been taken");
+            } else {
+                window.location.replace(data);
+            }
         }).catch(function(err) {
             console.log(err);
         });
@@ -83,7 +88,7 @@ $(document).ready(function() {
         passwordLogin.val("");
     });
 
-    function loginUser(email, password) {
+    function loginUser(username, password) {
         $.post("/api/login", {
             username: username,
             password: password
