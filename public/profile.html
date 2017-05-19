@@ -46,8 +46,13 @@
         </div>
         <div class="row">
             <div class="card  blue-grey lighten-4">
+<<<<<<< HEAD
                 <div class="card-content center-align">
                     <h5 id="hbar"><a href="#searchParking" class="waves-effect waves-light btn-large" style="color: black;"><i class="material-icons left">pageview</i>Search for Parking</a> | <a href="#provideParking" class="waves-effect waves-light btn-large" style="color: black;"><i class="material-icons left">location_on</i>Provide a Parking Spot</a></h5>
+=======
+                <div class="card-content">
+                    <h5><a href="#searchParking" class="tooltipped" data-position="top" data-delay="40" data-tooltip="If you would like to search for parking spaces available, click here." style="color: black;">Search for Parking</a> | <a href="#provideParking" class="tooltipped" data-position="top" data-delay="40" data-tooltip="If you wish to provide a parking space to other users, click here." style="color: black;">Provide a Parking Spot</a></h5>
+>>>>>>> 27789aba19202a47c073c3443bf535e7c1768954
                     <ul class="collapsible" data-collapsible="expandable">
                         <li>
                             <div class="collapsible-header active"><i class="material-icons">place</i>View your reserved parking spaces</div>
@@ -73,7 +78,7 @@
         </div>
     </div>
     <!-- Search for Parking Modal (Driver) -->
-    <div id="searchParking" class="modal modal-fixed-footer">
+    <div id="searchParking" class="modal modal-fixed-footer modal-close">
         <div class="modal-content">
             <h5>Please enter your desired parking location:</h5>
             <div class="row">
@@ -102,6 +107,25 @@
             </div>
             <h5>Please choose your car size:</h5>
             <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Options: Compact, Mid-Size, Large" id="carSize1" type="text" class="validate">
+                        <label for="carSize">Car Size</label>
+                    </div>
+                </div>
+            </form>
+            <h5>Time Availability (Parking Time)</h5>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="HH:MM" id="startTime1" type="text" class="validate">
+                        <label for="carSize">Start Time</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="HH:MM" id="endTime1" type="text" class="validate">
+                        <label for="carSize">End Time</label>
+                    </div>
+                </div>
             </form>
         </div>
         <div class="modal-footer">
@@ -110,7 +134,7 @@
         </div>
     </div>
     <!-- Provide a Parking Spot Modal (Supplier) -->
-    <div id="provideParking" class="modal modal-fixed-footer">
+    <div id="provideParking" class="modal modal-fixed-footer modal-close">
         <div class="modal-content">
             <h5>Please enter the parking space's location you would like to provide:</h5>
             <div class="row">
@@ -137,10 +161,31 @@
                     </div>
                 </form>
             </div>
+            <h5>Please choose the available car size for your parking space:</h5>
+            <form clas="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Options: Compact, Mid-Size, Large" id="carsize" type="text" class="validate">
+                        <label for="carSize">Car Size</label>
+                    </div>
+                </div>
+            </form>
+            <h5>Time Availability (Parking Time)</h5>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="HH:MM" id="startTime" type="text" class="validate">
+                        <label for="startTime">Start Time</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input placeholder="HH:MM" id="endTime" type="text" class="validate">
+                        <label for="endTime">End Time</label>
+                    </div>
+                </div>
             </form>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat">Submit</a>
+            <button href="#!" id="submit" class="modal-action modal-close waves-effect waves-teal btn-flat" type="submit">Submit</button>
             <a href="#!" class="modal-action modal-close waves-effect waves-teal btn-flat">Close</a>
         </div>
     </div>
@@ -150,6 +195,8 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <script src="frontend.js"></script>
+    <script src="assets/js/profile_supplier.js" type="text/javascript"></script>
 </body>
 
 </html>
+s
