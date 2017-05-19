@@ -72,6 +72,7 @@ module.exports = function(app) {
     })
     .then(function(dbLocation) {
       res.json(dbLocation);
+
     });
   });
 

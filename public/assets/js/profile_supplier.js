@@ -1,4 +1,5 @@
 
+
 $(document).ready(function() {
     var parkingAddress = $("#parkingAddress")
     var parkingCity = $("#parkingCity");
