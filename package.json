@@ -20,6 +20,7 @@
     "bcrypt": "^1.0.2",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.1",
+    "express": "^4.15.3",
     "express-session": "^1.15.2",
     "mysql": "^2.13.0",
     "sequelize": "^3.30.4"

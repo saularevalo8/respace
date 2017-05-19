@@ -106,3 +106,11 @@ nav {
 #googleMap {
     background-color: pink;
 }
+
+.btn, .btn-large {
+    background-color: #48d6bb;
+}
+
+#tabicons {
+    padding-left: 25px;
+}
