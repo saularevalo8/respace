@@ -20,11 +20,8 @@
     "bcrypt": "^1.0.2",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.1",
-<<<<<<< HEAD
-    "express": "^4.15.2",
-=======
+
     "express": "^4.15.3",
->>>>>>> a2ab2311b51c2427abb14e4f8955fba05d3c273a
     "express-session": "^1.15.2",
     "mysql": "^2.13.0",
     "passport": "^0.3.2",
