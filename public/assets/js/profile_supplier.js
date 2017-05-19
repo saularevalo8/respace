@@ -1,4 +1,4 @@
-//change the is name to the html page
+
 $("#supplierParking").on("click", function(event){
 	event.preventDefault();
 //confirm the name properties name are the same as html
@@ -7,9 +7,9 @@ $("#supplierParking").on("click", function(event){
 		city: $("#parkingCity").val().trim(),
 		state: $("#parkingState").val().trim(),
 		zip: $("#zip").val().trim(),
-		carSize: $("#carSize").val().trim(),
-		startTime: $("#startTime").val().trim(),
-		endTime: $("#endTime").val().trim()
+		// carSize: $("#carSize").val().trim(),
+		// startTime: $("#startTime").val().trim(),
+		// endTime: $("#endTime").val().trim()
 	}
 	$.post("/api/new", newSupplier)
 	.done(function(data){
