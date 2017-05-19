@@ -1,40 +1,46 @@
 
-$("#supplierParking").on("click", function(event){
-	event.preventDefault();
-//confirm the name properties name are the same as html
-	var newSupplier = {
-		address: $("#parkingAddress").val().trim(),
-		city: $("#parkingCity").val().trim(),
-		state: $("#parkingState").val().trim(),
-		zip: $("#zip").val().trim(),
-		// carSize: $("#carSize").val().trim(),
-		// startTime: $("#startTime").val().trim(),
-		// endTime: $("#endTime").val().trim()
-	}
-	$.post("/api/new", newSupplier)
-	.done(function(data){
-		console.log(data);
-	});
 
-	$("#address").val("");
-	$("#city").val("");
-	$("#zip").val("");
-	$("#carSize").val("");
-	$("#startTime").val("");
-	$("#endTime").val("");
-})
+$(document).ready(function() {
+    var parkingAddress = $("#parkingAddress")
+    var parkingCity = $("#parkingCity");
+    var parkingState = $("#parkingState");
+    var parkingZipCode = $("#parkingZipCode");
+    var carSize = $("#carsize");
+    var startTime = $("#startTime");
+    var endTime = $("#endTime");
+
+    $("#submit").on("click", function() {
+        event.preventDefault();
+        
+
+        // Constructing a newPost object to hand to the database
+        var newSupplier = {
+            address: parkingAddress.val().trim(),
+            city: parkingCity.val().trim(),
+            state: parkingState.val().trim(),
+            zip: parkingZipCode.val().trim(),
+            carSize: carSize.val().trim(),
+            startTime: startTime.val().trim(),
+            endTime: endTime.val().trim()
+        };
 
 
-$("#cancelSupplierParking").on("click", function(event){
-	event.preventDefault();
+        // if (!newSupplier.address || !newSupplier.city || !newSupplier.state || !newSupplier.zip) {
+        //     return alert("Please don't leave fields blank");
+        // }
 
-	$("#address").val("");
-	$("#city").val("");
-	$("#zip").val("");
-	$("#carSize").val("");
-	$("#startTime").val("");
-	$("#endTime").val("");
 
+        console.log(newSupplier);
+        if (newSupplier) {
+            submitLocation(newSupplier);
+        }
+	    });
+
+    function submitLocation(location) {
+        $.post("/api/locations/", location, function() {
+            window.location.href = "/profile";
+  });
+  };
 });
 
 

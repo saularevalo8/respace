@@ -11,8 +11,8 @@ module.exports = function(sequelize, DataTypes) {
     zip: DataTypes.INTEGER,
     carSize: DataTypes.STRING,
     inUse: DataTypes.BOOLEAN,
-    startTime: DataTypes.DATE,
-    endTime: DataTypes.DATE,
+    startTime: DataTypes.STRING,
+    endTime: DataTypes.STRING,
     isPaid: DataTypes.BOOLEAN
   }, {
     classMethods: {
