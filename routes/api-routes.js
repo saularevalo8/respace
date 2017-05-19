@@ -57,10 +57,13 @@ module.exports = function(app) {
       address: req.body.address,
       city: req.body.city,
       state: req.body.state,
-      zip: req.body.zip
+      zip: req.body.zip,
+      carSize: req.body.carSize,
+      startTime: req.body.startTime,
+      endTime: req.body.endTime
     })
-    .then(function(dbUser) {
-      res.json(dbUser);
+    .then(function(dblocation) {
+      res.json(dblocation);
     });
   });
 
