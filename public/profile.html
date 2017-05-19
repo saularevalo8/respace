@@ -22,6 +22,12 @@
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="profile.html">Profile</a></li>
                 <li><a href="map.html">Map</a></li>
+                <li><a class="dropdown-button center-align" href="#!" data-activates="dropdown1"><i class="material-icons large">settings</i></a></li>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li class="align-center"><a href="#!">Settings</a></li>
+                    <li class="divider"></li>
+                    <li class="center-align"><a href="#!">Logout</a></li>
+                </ul>
             </ul>
         </div>
     </nav>
@@ -32,7 +38,7 @@
             <div class="col s12">
                 <div class="row">
                     <div class="col s8 push-s4">
-                        <img src="assets/images/toothless.png" class="responsive-img" height="250" width="250">
+                        <img src="assets/images/toothless.png" class="responsive-img" id="userimg" height="250" width="250">
                     </div>
                 </div>
                 <h4 class="center">Hi, <span class="username">@username</span></h4>
@@ -41,7 +47,7 @@
         <div class="row">
             <div class="card  blue-grey lighten-4">
                 <div class="card-content center-align">
-                    <h5><a href="#searchParking" class="waves-effect waves-light btn-large" style="color: black;"><i class="material-icons left">pageview</i>Search for Parking</a> | <a href="#provideParking" class="waves-effect waves-light btn-large" style="color: black;"><i class="material-icons left">location_on</i>Provide a Parking Spot</a></h5>
+                    <h5 id="hbar"><a href="#searchParking" class="waves-effect waves-light btn-large" style="color: black;"><i class="material-icons left">pageview</i>Search for Parking</a> | <a href="#provideParking" class="waves-effect waves-light btn-large" style="color: black;"><i class="material-icons left">location_on</i>Provide a Parking Spot</a></h5>
                     <ul class="collapsible" data-collapsible="expandable">
                         <li>
                             <div class="collapsible-header active"><i class="material-icons">place</i>View your reserved parking spaces</div>
