@@ -1,8 +1,16 @@
 
+// *********************************************************************************
+// api-routes.js - this file offers a set of routes for displaying and saving data to the db
+// *********************************************************************************
 
+// Dependencies
+// =============================================================
+
+// Requiring our Todo model
 var db = require("../models");
 
-
+// Routes
+// =============================================================
 module.exports = function(app) {
 
   // // GET route for getting all of the posts
@@ -51,20 +59,21 @@ module.exports = function(app) {
     });
   });
 
- app.post("/api/location", function(req, res) {
+  app.post("/api/locations", function(req, res) {
     console.log(req.body);
-    db.location.create({
+    db.Location.create({
       address: req.body.address,
       city: req.body.city,
       state: req.body.state,
-      zip: req.body.zip
+      zip: req.body.zip,
+      carSize: req.body.carSize,
+      startTime: req.body.startTime,
+      endTime: req.body.endTime
     })
-    .then(function(dbUser) {
-      res.json(dbUser);
+    .then(function(dbLocation) {
+      res.json(dbLocation);
     });
   });
-
-
 
 //   // DELETE route for deleting posts
 //   app.delete("/api/posts/:id", function(req, res) {
