@@ -2,6 +2,10 @@ body {
 	background-color: #37474f;
 }
 
+body, html{
+    height:100%;
+}
+
 .logInIcon {
 	margin-left: 150px;
 }
@@ -118,4 +122,8 @@ nav {
 
 #hbar {
     padding-bottom: 30px;
+}
+
+.tabs .indicator{
+    display:none;
 }
