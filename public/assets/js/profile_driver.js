@@ -5,8 +5,8 @@ $("#driver").on("click", function(event){
 //confirm the name properties name are the same as html
 	var newDriver = {
 		address: $("#destAddress").val().trim(),
-		city: $("#destCity").val().trim(),
-		state: $("#destState").val().trim(),
+		// city: $("#destCity").val().trim(),
+		// state: $("#destState").val().trim(),
 		zip: $("#destZipCode").val().trim(),
 		// carSize: $("#carSize").val().trim(),
 		// startTime: $("#startTime").val().trim(),
