@@ -22,6 +22,7 @@
     "body-parser": "^1.17.1",
     "express": "^4.15.3",
     "express-session": "^1.15.2",
+    "geocode": "0.0.3",
     "geocoder": "^0.2.3",
     "mysql": "^2.13.0",
     "sequelize": "^3.30.4"
