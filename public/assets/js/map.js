@@ -255,12 +255,16 @@
 
                 // Multiple Markers -->
                 var markers = [
-                    ['$6.00', 33.991242, -118.468332, 4],
+                    ['', 33.991242, -118.468332, 4],
                     ['Coogee Beach', 33.990782, -118.466526, 5],
                     ['Cronulla Beach', 33.990661, -118.466054, 3],
                     ['Manly Beach', 33.990642, -118.465193, 2],
                     ['Maroubra Beach', 33.990336, -118.464789, 1],
-                    ['Venice Beach', 33.990392, -118.468940, 6]
+                    ['Venice Beach', 33.990392, -118.468940, 6],
+                    ['Midvale Ave, Westwood $5.00 All Day Parking, Compact Cars Only!', 34.062024, -118.438840, 4],
+                    ['Levering Ave, Westwood $3.50 an hour *Compact Only*', 34.061811, -118.443689, 3],
+                    ['Veteran Ave, Westwood $10 / 10:00am-8:00pm / *Compact Only*', 34.063173, -118.450352],
+                    ['Kelton Ave, Westwood $5.00 for 4 hours - All Day - *Oversized Vehicle Capacity*', 34.064301, -118.447745, 4]
                 ];
 
                 //Info Window Content -->
