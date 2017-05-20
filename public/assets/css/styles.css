@@ -38,7 +38,7 @@ html {
 
 .promo {
     width: 100%;
-    padding-top: 125px;
+    padding-top: 75px;
     overflow: hidden;
 }
 
@@ -111,6 +111,11 @@ nav {
     background-color: #48d6bb;
 }
 
-#tabicons {
-    padding-left: 25px;
+#userimg {
+    margin-left: 25px;
+    border:4px solid #222d32;
+}
+
+#hbar {
+    padding-bottom: 30px;
 }
