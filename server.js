@@ -2,7 +2,12 @@ var express = require("express");
 var passport = require('passport')
 var bodyParser = require("body-parser");
 var session = require("express-session");
+<<<<<<< HEAD
 var passportConfig = require("./config/passport");
+=======
+var geocoder = require("geocoder");
+
+>>>>>>> b75d2c6a0e6104d7cde29ac598040b61663b64d3
 // Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
 var db = require("./models");
