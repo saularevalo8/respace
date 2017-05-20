@@ -10,7 +10,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -27,19 +27,37 @@
 </head>
 
 <body>
+    <nav>
+        <div class="nav-wrapper blue-grey darken-4 z-depth-5">
+            <img class="img-responsive" id="logo-font" height="110" width="110" src="assets/images/ReSpaceFontt.svg">
+            <a href="#" class="brand-logo"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li class="active"><a href="map.html">Map</a></li>
+                <li><a class="dropdown-button center-align" href="#!" data-activates="dropdown1"><i class="material-icons large">settings</i></a></li>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li class="align-center"><a href="#!">Settings</a></li>
+                    <li class="divider"></li>
+                    <li class="center-align"><a href="#!">Logout</a></li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
     <div id="map_wrapper">
-        <div id="map_canvas" class="mapping">
-<script>
-            // jQuery(function($) {
-            //     <!-- Asynchronously Load the map API  -->
-                var script = document.createElement('script');
-                script.src = "http://maps.googleapis.com/maps/api/js?&false&callback=initialize";
-                document.body.appendChild(script);
-            // });
-
-</script>
-<script src="assets/js/map.js"></script>   
-     
+        <div id="map_canvas" class="mapping"></div>
+    </div>
+    <script>
+    // jQuery(function($) {
+    //     <!-- Asynchronously Load the map API  -->
+    var script = document.createElement('script');
+    script.src = "http://maps.googleapis.com/maps/api/js?&false&callback=initialize";
+    document.body.appendChild(script);
+    // });
+    </script>
+    <script src="assets/js/map.js"></script>
 </body>
 
 </html>
