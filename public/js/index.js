@@ -1,12 +1,12 @@
 $(document).ready(function() {
     var loginForm = $("form.login");
     var signUpForm = $("form.signup");
-    var firstInput = $("input#firstName_prefix");
-    var lastInput = $("input#lastName_prefix");
-    var usernameInput = $("input#username");
-    var passwordInput = $("input#password");
-    var usernameLogin = $("input#usernameLogin");
-    var passwordLogin = $("input#passwordLogin");
+    var firstInput = $("#firstName_prefix");
+    var lastInput = $("#lastName_prefix");
+    var usernameInput = $("#username");
+    var passwordInput = $("#password");
+    var usernameLogin = $("#usernameLogin");
+    var passwordLogin = $("#passwordLogin");
 
     //verify password format
     var passwordRegEx = (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/);
@@ -40,9 +40,9 @@ $(document).ready(function() {
         };
 
 
-        // if (!newUser.firstName || !newUser.lastName || !newUser.email || !newUser.password) {
-        //     return alert("Please don't leave fields blank");
-        // }
+        if (!newUser.firstName || !newUser.lastName || !newUser.email || !newUser.password) {
+             return alert("Please don't leave fields blank");
+         }
 
 
         console.log(newUser);
