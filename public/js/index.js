@@ -1,12 +1,14 @@
 $(document).ready(function() {
-    var firstInput = $("#firstName_prefix");
-    var lastInput = $("#lastName_prefix");
-    var usernameInput = $("#username");
-    var passwordInput = $("#password");
-    var usernameLogin = $("#usernameLogin");
-    var passwordLogin = $("#passwordLogin");
+    var loginForm = $("form.login");
+    var signUpForm = $("form.signup");
+    var firstInput = $("input#firstName_prefix");
+    var lastInput = $("input#lastName_prefix");
+    var usernameInput = $("input#username");
+    var passwordInput = $("input#password");
+    var usernameLogin = $("input#usernameLogin");
+    var passwordLogin = $("input#passwordLogin");
 
-    //verify email format
+    //verify password format
     var passwordRegEx = (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/);
     passwordInput.bind('input propertychange', function() {
         if (!passwordRegEx.test($(this).val())) {
@@ -22,7 +24,7 @@ $(document).ready(function() {
         }
     });
 
-    $("#create").on("click", function() {
+    signUpForm.on("submit", function(event) {
         event.preventDefault();
         // Wont submit the post if we are missing a body or a title
         if (!firstInput.val().trim() || !lastInput.val().trim()) {
@@ -71,7 +73,7 @@ $(document).ready(function() {
         });
     }
 
-    $("#login").on("click", function() {
+    loginForm.on("submit", function(event) {
         event.preventDefault();
         var userData = {
             username: usernameLogin.val().trim(),

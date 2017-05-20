@@ -28,10 +28,6 @@ module.exports = function(app) {
 
     // map route loads map.html
     app.get("/map", isAuthenticated, function(req, res) {
-
-         if (req.user) {
-            res.redirect("/profile");
-         }
         res.sendFile(path.join(__dirname, "../public/map.html"));
     });
 
