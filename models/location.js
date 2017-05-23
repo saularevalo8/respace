@@ -1,6 +1,3 @@
-var Sequelize = require("sequelize");
-var sequelize = require("../config/connection.js");
-
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var Location = sequelize.define('Location', {
