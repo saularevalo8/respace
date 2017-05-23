@@ -28,19 +28,34 @@ Respace is a dynamic web application which serves as a search engine for parking
 
 ## Code Swot Analysis ##
 * Strenghts
-  - API Integration
-  - UI/UX Designing
+  - User Interface
+  - Data integration
 * Weaknesses
-  - Deleting Favorites
-  - Division of content
+  - Small inventory
+  - Built customer loyalty
 * Opportunities
-  - Gighy Intergration
-  - User Authentication
+  - Integrate Billing/Transaction System
+  - Provide directions
+  - Supply parking for airbnb like companies
+  - Partner with local cities to provide incentive to host. 
+
 * Threats
-  - Bigger Partnerships
-  - Marketing
+  - No funding - Marketing
+  - Multiple companies in the market
 
 ## Technologies ##
-HTML, CSS, JavaScript, JQuery, AJAX, APIs, Local Storage, 
+* HTML
+* CSS
+* JavaScript 
+* JQuery
+* AJAX
+* APIs
+* MaterializeCSS
+* Express
+* Node.js
+* Sequelize
+* MySql
+* BCrypt
+* Geocoder
 
 
